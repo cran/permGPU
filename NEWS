@@ -1,0 +1,34 @@
+permGPU changes
+=================
+
+changes in permGPU 0.14.3
+
+- fixing bugs and clearing code
+
+changes in permGPU 0.14.2
+
+- fixes to scoregpu and permgpu when little or no variability in expression
+
+changes in permGPU 0.14.1
+
+- scoregpu incorporates permutation
+
+changes in permGPU 0.14
+
+- Functions for computing Cox (rank) score test statistic
+
+changes in permGPU 0.13
+
+- Cox test statistic is faster for data sets with large number of events
+
+- Cox test handles missing data 
+
+changes in permGPU 0.12
+
+- permGPU uses the R random number generator
+
+changes in permGPU 0.11
+
+- Cox rank score test statistic is added  
+
+- Pearson, Spearman and Cox test statistics are standardized
