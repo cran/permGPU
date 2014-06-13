@@ -1,6 +1,10 @@
 permGPU changes
 =================
 
+changes in permGPU 0.14.4
+
+- fixing note related to importing dependent packages
+
 changes in permGPU 0.14.3
 
 - fixing bugs and clearing code

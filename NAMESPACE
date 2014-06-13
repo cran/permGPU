@@ -1,2 +1,5 @@
 useDynLib(permGPU)
 exportPattern("^[[:alpha:]]+")
+import(Biobase)
+import(RUnit)
+import(foreach)

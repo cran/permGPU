@@ -1,14 +1,14 @@
 #include <cuda.h>
-#include <iostream>
-#include <string>
-#include <fstream>
+//#include <iostream>
+//#include <string>
+//#include <fstream>
 #include "ranker.h"
-#include <stdio.h> // you need to delete
+//#include <stdio.h> // you need to delete
 
 #include <R.h>
 #include <Rmath.h>
 
-using namespace std;
+//using namespace std;
 
 #define BLOCKSIZE_X 32
 #define BLOCKSIZE_Y 16
@@ -738,7 +738,7 @@ void scoregpu(float *X_h, float *Y_h, float *Ydelta_h, const int *n, const int *
     error("Failed at memcpy:T_d");
 
  // survival test
-  else if (test == "cox" || test == "npcox"){
+  if (test == "cox" || test == "npcox"){
     if (test =="npcox"){
       // compute ranks of X_h;
       string method = "average";  // Can also be "min" or "max" or "default"
