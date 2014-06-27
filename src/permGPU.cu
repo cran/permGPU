@@ -1381,7 +1381,7 @@ void permgpu(float *X_h, float *Y_h, float *Ydelta_h, const int *n, const int *k
 
     // compute T
     Den<<<nBlocks_n0, blockSize_n0>>>(den_d, N0_d, N, n0);
-    SUstat<<<grid, threads>>>(X_d, T_d, N0_d, den_d, N, K, n0, pitch_x, 1);
+    SUstat_new<<<grid, threads>>>(X_d, T_d, N0_d, den_d, N, K, n0, pitch_x, 1);
 
     for (int b = 0; b < B; b++){
       // permute Y
@@ -1399,7 +1399,7 @@ void permgpu(float *X_h, float *Y_h, float *Ydelta_h, const int *n, const int *k
 
       // compute test statistic
       Den<<<nBlocks_n0, blockSize_n0>>>(den_d, N0_d, N, n0);
-      SUstat<<<grid, threads>>>(X_d, Ttilde_d, N0_d, den_d, N, K, n0, pitch_x, 1);
+      SUstat_new<<<grid, threads>>>(X_d, Ttilde_d, N0_d, den_d, N, K, n0, pitch_x, 1);
 
       // compute maximum of test statistic
       Tmax <<<1, BLOCKSIZE_Tmax>>> (Ttilde_d, K, Tmax_d);

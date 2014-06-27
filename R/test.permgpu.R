@@ -20,6 +20,12 @@ test.permgpu = function(test){
     std = sqrt(n0*n1*(n0+n1+1.0)/12.0)
     checkEquals(sum(permgpu(testdat, "event", B=0, test="wilcoxon")[["stat"]]), sum((sum(rank(exprs(testdat)[1,])[event==1])-m)/std, (sum(rank(exprs(testdat)[2,])[event==1])-m)/std), tolerance=0.001)
   }
+  else if (test == "npcox"){
+    checkEquals(sum(permgpu(testdat, "otime", "event", B=0, test="npcox")[["stat"]]), 39.21569, tolerance=0.001)
+  }
+  else if (test == "cox"){
+    checkEquals(sum(permgpu(testdat, "otime", "event", B=0, test="cox")[["stat"]]), 57.21867, tolerance=0.001)
+  }
   else
     stop("test unknown.")
 }

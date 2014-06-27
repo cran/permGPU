@@ -1,6 +1,10 @@
 permGPU changes
 =================
 
+changes in permGPU 0.14.5
+
+- test calculation result checks are added
+
 changes in permGPU 0.14.4
 
 - fixing note related to importing dependent packages

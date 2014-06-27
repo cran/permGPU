@@ -28,6 +28,12 @@ test.permgpu(test)
 
   # check permgpu ("wilcoxon")
   test.permgpu("wilcoxon")
+
+  # check permgpu ("npcox")
+  test.permgpu("npcox")
+
+  # check permgpu ("cox")
+  test.permgpu("cox")
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.
