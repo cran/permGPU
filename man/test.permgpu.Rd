@@ -23,6 +23,7 @@ test.permgpu(test)
 }
 
 \examples{
+  library(survival)
   # check permgpu ("ttest")
   test.permgpu("ttest")
 

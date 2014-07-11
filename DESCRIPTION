@@ -1,8 +1,8 @@
 Package: permGPU
 Type: Package
 Title: permPGU: Using GPUs in Statistical Genomics
-Version: 0.14.5
-Date: 2014-06-27
+Version: 0.14.6
+Date: 2014-07-11
 Author: Ivo D. Shterev, Sin-Ho Jung, Stephen L. George and Kouros Owzar
 Maintainer: Ivo D. Shterev <i.shterev@duke.edu>
 SystemRequirements: Nvidia's CUDA toolkit (>= release 6.0)
@@ -10,10 +10,10 @@ Description: This R extension package can be used to carry out
         permutation resampling inference in the context of RNA
         microarray studies
 Depends: R (>= 2.15.3), Biobase (>= 2.18.0), RUnit (>= 0.4.26), foreach
-        (>= 1.4.2)
+        (>= 1.4.2), survival(>= 2.37-7)
 License: GPL-3
 LazyLoad: yes
 Repository: CRAN
-Packaged: 2014-06-27 20:13:21 UTC; is33
-Date/Publication: 2014-06-28 20:58:59
+Packaged: 2014-07-11 19:43:58 UTC; is33
+Date/Publication: 2014-07-19 09:04:39
 NeedsCompilation: yes

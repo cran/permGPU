@@ -1,6 +1,12 @@
 permGPU changes
 =================
 
+changes in permGPU 0.14.6
+
+- added dependency on "survival" package
+
+- improved test calculation result checks
+
 changes in permGPU 0.14.5
 
 - test calculation result checks are added

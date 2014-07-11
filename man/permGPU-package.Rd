@@ -21,8 +21,8 @@
 \tabular{ll}{
 Package: \tab permGPU\cr
 Type: \tab Package\cr
-Version: \tab 0.14.5\cr
-Date: \tab 2014-06-27\cr
+Version: \tab 0.14.6\cr
+Date: \tab 2014-07-11\cr
 License: \tab GPL-3\cr
 LazyLoad: \tab yes\cr
 }
