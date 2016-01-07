@@ -6,20 +6,20 @@
 ## Licensed under GNU GPL 3 or later
 
 # Compilers
-EXT := cu
+EXT = cu
 
-NVCC := @NVCC@
+NVCC = @NVCC@
 
 # Program-specifics
-OBJS := permGPU.o
-TARGET := permGPU.so
+OBJS = permGPU.o
+TARGET = permGPU.so
 
 # Compiler options
-FLAGS := @NCFLAGS@
+FLAGS = @NCFLAGS@
 
 # linker options
-LDFLAGS := @LDFLAGS@
-LIBS := @LIBS@
+LDFLAGS = @LDFLAGS@
+LIBS = @LIBS@
 
 # Build rules
 .SUFFIXES: .cu .o

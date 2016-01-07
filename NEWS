@@ -1,6 +1,12 @@
 permGPU changes
 =================
 
+changes in permGPU 0.14.7
+
+- fixed out of date syntax in Makefile
+
+- minor fixes
+
 changes in permGPU 0.14.6
 
 - added dependency on "survival" package

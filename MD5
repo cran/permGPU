@@ -1,6 +1,6 @@
-bc12a156b5db313c54c75b6a98941189 *DESCRIPTION
-6e28cb3f872190e6cb206e2f35f479a2 *NAMESPACE
-c0b51c2537e3a9058af6ff6efc2cc213 *NEWS
+47a6331c77ae6019056acb40b63bc45a *DESCRIPTION
+ac87e4d0642e94eba46235eb2898304c *NAMESPACE
+9e239d3c0ec1d6921fca3b917362291c *NEWS
 213358a7f348786120356f4453ee1593 *R/makeExprSet.R
 bbde671f3c9e525b0475bacd6d2186ab *R/permgpu.R
 2d40015b6ed092b7aa3ec47894a7075d *R/scoregpu.R
@@ -15,6 +15,6 @@ e0697a337bd7067bb7d67fcdb991d9ef *man/permgpu.Rd
 d11f27a49f3783f496b6707b20b37f2e *man/scoregpu.Rd
 f172b4b7ce8ff1ce71e8b348c7c27d71 *man/test.permgpu.Rd
 626277c781dad4e8a65392daa4c05cf6 *man/test.scoregpu.Rd
-1b88e94f8e2b410c6d56afaebc94aaca *src/Makefile.in
+b0fab2bc5870aeafefed002c4b979f77 *src/Makefile.in
 06cdf32b81e1b750c86b659f780700e0 *src/permGPU.cu
 46a6ab760e3d154e1718f69e63065fef *src/ranker.h
