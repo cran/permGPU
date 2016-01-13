@@ -69,9 +69,9 @@ scoregpu(y, event, markers, test, B=0, stand=TRUE, pval=TRUE, index=FALSE, scale
    A multiple testing procedure to associate gene expression levels with 
    survival.\emph{Statistics in Medicine}. \bold{24}, 20, 3077--88.
 
-   Shterev, I.D., Jung, S.-H., George S.L., Owzar K. (2010)
+   Shterev, I.D., Jung, S.-H., George S.L., Owzar K.
    permGPU: Using graphics processing units in RNA microarray 
-   association studies. Duke University Biostatistics and Bioinformatics Working Paper Series.
+   association studies. BMC Bioinformatics 2010, 11:329.
 }
 
 %% ~Make other sections like Warning with \section{Warning }{....} ~

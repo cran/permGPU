@@ -64,8 +64,9 @@ and \code{Rmath.h}.
 
 
 \references{
-  Shterev, I.D., Jung, S.-H., George, S.L. and Owzar, K. (2010). permGPU: Using graphics processing units in RNA microarray association studies. 
-  Duke University Biostatistics and Bioinformatics Working Paper Series.
+   Shterev, I.D., Jung, S.-H., George S.L., Owzar K.
+   permGPU: Using graphics processing units in RNA microarray 
+   association studies. BMC Bioinformatics 2010, 11:329.
 
   Jung, S.-H., Owzar K., George, S.L. (2005). A multiple testing
   procedure to associate gene expression levels with 

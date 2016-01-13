@@ -1,6 +1,6 @@
-47a6331c77ae6019056acb40b63bc45a *DESCRIPTION
+efd641276773d389395d9b5282ea0596 *DESCRIPTION
 ac87e4d0642e94eba46235eb2898304c *NAMESPACE
-9e239d3c0ec1d6921fca3b917362291c *NEWS
+0d3fdee82cc528b800ba323a77acf57c *NEWS
 213358a7f348786120356f4453ee1593 *R/makeExprSet.R
 bbde671f3c9e525b0475bacd6d2186ab *R/permgpu.R
 2d40015b6ed092b7aa3ec47894a7075d *R/scoregpu.R
@@ -10,9 +10,9 @@ fc1af2889cf189b0347f25a761bc5e68 *R/test.permgpu.R
 c41acb4d10009e3621a95f04b15d2fce *configure
 00f81f44a88225013f11cbca4c2e51e9 *configure.ac
 fc26f1b63880d1df5fab5cfc8cf9933a *man/makeExprSet.Rd
-b00920f8f9a002fe547bdc165c7e285d *man/permGPU-package.Rd
-e0697a337bd7067bb7d67fcdb991d9ef *man/permgpu.Rd
-d11f27a49f3783f496b6707b20b37f2e *man/scoregpu.Rd
+731e7a26c107d3ab578efa0ddd92b2c0 *man/permGPU-package.Rd
+884c18dfb89296534d7d9948adbc7abb *man/permgpu.Rd
+88f580e3c606d56676dc2f5485369229 *man/scoregpu.Rd
 f172b4b7ce8ff1ce71e8b348c7c27d71 *man/test.permgpu.Rd
 626277c781dad4e8a65392daa4c05cf6 *man/test.scoregpu.Rd
 b0fab2bc5870aeafefed002c4b979f77 *src/Makefile.in

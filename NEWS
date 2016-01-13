@@ -1,6 +1,10 @@
 permGPU changes
 =================
 
+changes in permGPU 0.14.8
+
+- minor fixes
+
 changes in permGPU 0.14.7
 
 - fixed out of date syntax in Makefile
