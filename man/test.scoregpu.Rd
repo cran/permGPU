@@ -1,6 +1,6 @@
 \name{test.scoregpu}
 \alias{test.scoregpu}
-%- Also NEED an '\alias' for EACH other topic documented here.
+
 \title{
   Conduct permutation resampling analysis using permGPU
 }
@@ -19,7 +19,4 @@ test.scoregpu()
 \examples{
   test.scoregpu()
 }
-% Add one or more standard keywords, see file 'KEYWORDS' in the
-% R documentation directory.
-\keyword{survival}
-\keyword{nonparametric}% __ONLY ONE__ keyword per line
+

@@ -1,6 +1,6 @@
 \name{permgpu}
 \alias{permgpu}
-%- Also NEED an '\alias' for EACH other topic documented here.
+
 \title{
   Conduct permutation resampling analysis using permGPU
 }
@@ -15,26 +15,22 @@
 \usage{
 permgpu(datobj, y, event = NULL, test, B, diag = FALSE, scale = FALSE)
 }
-%- maybe also 'usage' for other objects documented here.
+
 \arguments{
   \item{datobj}{
-    %%     ~~Describe \code{datobj} here~~
     an \code{\link[Biobase:class.ExpressionSet]{ExpressionSet}} object
     containing the expression and phenotype data.
 }
   \item{y}{
-    %%     ~~Describe \code{y} here~~
     The name of the outcome variable. Note that y must be an
     element of names(pData(datobj)). See example.
 }
   \item{event}{
-    %%     ~~Describe \code{event} here~~
     In the case of survival analysis, event is the name of
     the event indicator. Note that event must be an
     element of names(pData(datobj)). See example.
 }
   \item{test}{
-    %%     ~~Describe \code{test} here~~
     specifies the test to be performed. Possible options are
     \code{ttest} (two-sample t-test),
     \code{wilcoxon} (two-sample Wilcoxon test),
@@ -44,22 +40,18 @@ permgpu(datobj, y, event = NULL, test, B, diag = FALSE, scale = FALSE)
     and \code{npcox} (Cox rank score test). 
 }
   \item{B}{
-    %%     ~~Describe \code{B} here~~
     specifies the number of random permutations to be performed.
 }
   \item{diag}{
-    %%     ~~Describe \code{diag} here~~
     This flag can be set to TRUE if 
     specifies the type of object returned.
   }
  \item{scale}{
-    %%     ~~Describe \code{test} here~~
     If TRUE, markers are centered. 
 }
 }
 
 \value{
-  %%  ~Describe the value returned
   This function returns a data frame. The first column contains the gene
   names. The second, thrid and fourth columns contain the marginal test
   statistics, marginal  unadjusted permutation P-values and FWER
@@ -74,13 +66,11 @@ permgpu(datobj, y, event = NULL, test, B, diag = FALSE, scale = FALSE)
   \item{K}{The number of genes}
   \item{B}{The number of permutations}
   \item{test}{The test used in the permutation analysis}
-%% ...
 }
 \note{
   The maximum number of patients for the current version is \eqn{1000}.
 }
 \references{
-  %% ~put references to the literature/web site here ~
    Jung, S.-H., Owzar K., George, S.L. (2005)
    A multiple testing procedure to associate gene expression levels with 
    survival.\emph{Statistics in Medicine}. \bold{24}, 20, 3077--88.
@@ -100,11 +90,7 @@ permgpu(datobj, y, event = NULL, test, B, diag = FALSE, scale = FALSE)
    Gene expression-based survival
    prediction in lung adenocarcinoma: a multi-site, blinded validation study.
    \emph{Nat Med}. \bold{14}, 8, 822--827.
-
-
 }
-
-%% ~Make other sections like Warning with \section{Warning }{....} ~
 
 \examples{
 library(Biobase)
@@ -182,12 +168,5 @@ permgpu(testdat,"otime",event="event",B=100,test="npcox")
 ## permgpu(RMADAT,"ostime",event="event",B=10000,test="cox")
 ## To carry out association testing using the Cox rank score test
 ## permgpu(RMADAT,"ostime",event="event",B=10000,test="npcox")
-
-
-
-
 }
-% Add one or more standard keywords, see file 'KEYWORDS' in the
-% R documentation directory.
-\keyword{survival}
-\keyword{nonparametric}% __ONLY ONE__ keyword per line
+

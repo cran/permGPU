@@ -1,6 +1,6 @@
 \name{test.permgpu}
 \alias{test.permgpu}
-%- Also NEED an '\alias' for EACH other topic documented here.
+
 \title{
   Conduct permutation resampling analysis using permGPU
 }
@@ -17,7 +17,6 @@ test.permgpu(test)
 }
 \arguments{
   \item{test}{
-    %%     ~~Describe \code{y} here~~
     Specifies the test.
   }
 }
@@ -36,7 +35,4 @@ test.permgpu(test)
   # check permgpu ("cox")
   test.permgpu("cox")
 }
-% Add one or more standard keywords, see file 'KEYWORDS' in the
-% R documentation directory.
-\keyword{survival}
-\keyword{nonparametric}% __ONLY ONE__ keyword per line
+

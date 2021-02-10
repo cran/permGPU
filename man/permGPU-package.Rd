@@ -3,12 +3,14 @@
 \alias{permGPU}
 \docType{package}
 \title{
- permGPU: Using graphics processing units in RNA microarray association studies.
-
+packageTitle{permGPU}
 }
 \description{
   This package can be used to carry out permutation
-  resampling inference using GPUs. Currently the package supports six
+  resampling inference using GPUs, as described in 
+  I. D. Shterev, S. H. Jung, S. L. George and K. Owzar. 
+  "permGPU: Using Graphics Processing Units in RNA Microarray Association Studies",
+  BMC Bioinformatics 11(1), 2010. Currently the package supports six
   test statistics: the t and Wilcoxon tests, for two-sample problems,
   the Pearson and Spearman statistics, for non-censored continuous
   outcomes, and the Cox score and rank score test (Jung et al, 2005), for
@@ -18,16 +20,11 @@
   P-values using a single-step procedure (Westfall and Young, 1993).
 }
 \details{
-\tabular{ll}{
-Package: \tab permGPU\cr
-Type: \tab Package\cr
-Version: \tab 0.14.6\cr
-Date: \tab 2014-07-11\cr
-License: \tab GPL-3\cr
-LazyLoad: \tab yes\cr
-}
-~~ An overview of how to use the package, including the most important ~~
-~~ functions ~~
+
+The DESCRIPTION file:
+packageDESCRIPTION{permGPU}
+packageIndices{permGPU}
+
 }
 
 \note{
@@ -35,7 +32,7 @@ To build this package, the CUDA SDK (version 2.3 or higher) must be installed
 on the system. Specifically, the nvcc compiler must be in the path and
 the CUDA_HOME must be properly defined. For example, if the SDK kit is
 installed under /usr/local/cuda then the CUDA_HOME variable needs to be
-set to  /usr/local/cuda . The SDK can be obtained from \url{www.nvidia.com}
+set to  /usr/local/cuda . The SDK can be obtained from \url{https://www.nvidia.com}
 The CUDA_HOME variable can also be explicitly defined in \code{permGPU/src/Makefile}.
 The maximum number of patients for the current version is \eqn{1000}.
 
@@ -45,10 +42,10 @@ Alternatively, these can be set in \code{permGPU/src/Makefile}.
 
 
 To build this package, a number of C++ classes and functions for random
-number generation (available from \url{http://www.agner.org/random/}
+number generation (available from \url{https://www.agner.org/random/}
 under a GPL license) and a C++ template for calculating ranks
 (available from
-\url{http://sites.google.com/site/jivsoft/Home/compute-ranks-of-elements-in-a-c---array-or-vector}
+\url{https://sites.google.com/site/jivsoft/Home/compute-ranks-of-elements-in-a-c---array-or-vector}
 under a BSD license) are needed. The requisite files are included in the
 package source code tar ball. In future releases, these functionalities
 will be replaced by native \code{R} functions from \code{R.h}
@@ -58,7 +55,7 @@ and \code{Rmath.h}.
 \author{
   I. D. Shterev, S.-H. Jung, S. L. George and K. Owzar
   
-  Maintainer: Ivo D. Shterev <i.shterev@duke.edu>
+  Maintainer: I. D. Shterev <i.shterev@duke.edu>
 }
 
 
@@ -79,6 +76,3 @@ and \code{Rmath.h}.
 
 \keyword{ package }
 
-\examples{
-### See ? permgpu
-}

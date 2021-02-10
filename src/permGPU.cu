@@ -1,14 +1,14 @@
+// Copyright (C) 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018 by Ivo D. Shterev
 #include <cuda.h>
-//#include <iostream>
-//#include <string>
-//#include <fstream>
 #include "ranker.h"
-//#include <stdio.h> // you need to delete
 
 #include <R.h>
 #include <Rmath.h>
 
-//using namespace std;
+#include <Rinternals.h>
+#include <R_ext/Rdynload.h>
+
+using namespace std;
 
 #define BLOCKSIZE_X 32
 #define BLOCKSIZE_Y 16
@@ -19,6 +19,11 @@ __constant__ float Y_d[1000];
 __constant__ float Ydelta_d[1000];
 
 extern "C"{
+void R_init_permGPU(DllInfo* info) {
+  R_registerRoutines(info, NULL, NULL, NULL, NULL);
+  R_useDynamicSymbols(info, TRUE);
+}
+
 void Yperm(float *Y, const int N)
 {
   for (int n = 1; n < N; n++){

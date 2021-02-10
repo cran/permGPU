@@ -1,6 +1,6 @@
 \name{makeExprSet}
 \alias{makeExprSet}
-%- Also NEED an '\alias' for EACH other topic documented here.
+
 \title{
 Create an expressionSet object for use with \link{permGPU}
 }
@@ -15,7 +15,7 @@ Create an expressionSet object for use with \link{permGPU}
 \usage{
 makeExprSet(exprdat, phenodat, anno = "custom")
 }
-%- maybe also 'usage' for other objects documented here.
+
 \arguments{
   \item{exprdat}{
     This should be an \eqn{K \times n}, where \eqn{K} denotes the number
@@ -79,9 +79,5 @@ dim(pData(testdat))
 ## Get sample and marker ids
 sampleNames(testdat)
 featureNames(testdat)
-
 }
-% Add one or more standard keywords, see file 'KEYWORDS' in the
-% R documentation directory.
-\keyword{datagen}
-\keyword{manip}
+
